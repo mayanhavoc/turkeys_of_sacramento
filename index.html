@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frogger</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Turkeys of Sacramento</h1>
+      <img src="./sprites-and-backgrounds/Pavo.png" alt="Turkey">
+    </div>
+    <div class="wrapper">
+      <canvas id="canvas1"></canvas>
+      <canvas id="canvas2"></canvas>
+      <canvas id="canvas3"></canvas>
+      <canvas id="canvas4"></canvas>
+      <canvas id="canvas5"></canvas>
+    </div>
+
+    <!-- Linking the script files, the ORDER of these files is very important. -->
+    <!-- setup.js will include canvas setup, global variables and references to the sprites we'll use. Basically all the things that are needed for the applications. -->
+    <script src="javaScript/setup.js"></script>
+    <!-- Frogger.js will contain code to create and handle the player character.   -->
+    <script src="javaScript/frogger.js"></script>
+    <!-- particles.js will create dust trail under the frog when it's in dry land.  -->
+    <script src="javaScript/particles.js"></script>
+    <!-- ripples.js will create water ripples when we move over the river area -->
+    <script src="javaScript/ripples.js"></script>
+    <!-- obstacles.js will handle cars, logs and turtles -->
+    <script src="javaScript/obstacles.js"></script>
+    <!-- utilities.js all other bits like animation loop and event listeners -->
+    <script src="javaScript/utilities.js"></script>
+  </body>
+</html>
